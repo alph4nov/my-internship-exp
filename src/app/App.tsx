@@ -13,7 +13,6 @@ import {
   Zap,
   ClipboardList,
 } from "lucide-react";
-import myImage from '/img/product_team.jpg';
 
 
 const NAV_LINKS = [
@@ -395,7 +394,7 @@ export default function App() {
           <div className="relative pb-8">
             <div className="overflow-hidden rounded-2xl bg-gray-200">
               <img
-                src="./img/product_team.jpg"
+                src="./img/product_team-1.jpg"
                 alt="MY SPX Superheroes"
                 className="w-full object-cover"
                 style={{ height: "clamp(280px, 40vw, 440px)" }}
@@ -410,11 +409,10 @@ export default function App() {
                     [MY] PRODUCT TEAM SUPERHEROES
                   </p>
                   <p className="text-white/75 leading-relaxed text-[15px]">
-                    The Last-Mile Delivery (LMD) Department manages final-stretch logistics for the
-                    entire Klang Valley region. The team of 48 coordinators, route planners, and field
-                    officers handles 18,000–25,000 daily deliveries across 12 delivery zones, utilising
-                    the RouteVision platform for dynamic route optimisation, SLA compliance tracking,
-                    and rider performance analytics.
+                    The Product Team consist of 15 total members, 11 FTE and 4 other members including interns.
+                    The MY Product Team is responsible for localizing, testing, deploying, and maintaining the software systems that power SPX Express 
+                    operations in Malaysia. They ensure that global or regional tech solutions align 
+                    perfectly with local operational workflows, legal requirements, and business goals.
                   </p>
                 </div>
                 <div className="flex flex-col justify-center gap-4">
@@ -664,16 +662,16 @@ export default function App() {
           </h2>
 
           <p className="text-white/55 text-base leading-relaxed mb-12 max-w-lg mx-auto">
-            To the entire SwiftRoute Logistics team, my supervisors, and my fellow interns —
-            thank you for every lesson, challenge, and moment of guidance throughout this journey.
-            This experience was delivered right on time.
+            To all, throughout the journey, thank you for the chance given, guidelines, and support.
+            It was memorable and valuable experience to be part of the team. Also, this concluded my wonderful journey as 
+            a student (for now), may God bless all of us, insyaAllah. Peace out.
           </p>
 
           <div className="grid sm:grid-cols-3 gap-4">
             {[
-              { sup: "Presented by", main: "Ahmad Farhan bin Zulkifli", sub: "INT-2026-0071" },
-              { sup: "Host Company", main: "SwiftRoute Logistics Sdn. Bhd.", sub: "Petaling Jaya Hub" },
-              { sup: "Duration", main: "June – August 2026", sub: "12 Weeks · 480 Hours" },
+              { sup: "Presented by", main: "Izzat Mahfuz", sub: "2026" },
+              { sup: "Company", main: "SPX Xpress Sdn. Bhd.", sub: "Mid Valley, KL" },
+              { sup: "Duration", main: "Mar – July 2026", sub: "14 Week" },
             ].map(({ sup, main, sub }) => (
               <div
                 key={sup}
