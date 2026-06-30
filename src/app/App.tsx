@@ -29,7 +29,7 @@ const NAV_LINKS = [
 const TASK_DATA = [
   {
     num: "TASK-01",
-    title: "Parcel Sorting & Manifest Verification",
+    title: "[UAT & LIVE] IAC Multiple ePOD",
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
     desc: "Assisted the sorting team in verifying inbound manifests against physical parcel counts. Identified and logged discrepancies in the warehouse management system (WMS), reducing mismatch errors by 12% over six weeks. Developed a daily reconciliation checklist that was later adopted by the full team.",
