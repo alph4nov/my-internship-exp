@@ -82,15 +82,15 @@ const PROCESS_CARDS = [
   },
   {
     id: 2,
-    title: "Phase 2: Technical Development & UAT Verification",
+    title: "BENEFITS",
     bg: "#2563eb",
-    desc: "Once engineering completes development, systematic User Acceptance Testing (UAT) is executed to validate that all technical builds strictly align with underlying business requirements.",
+    desc: "#1 The Product Lifecycle Insights\n" + "#2 Stages in Product pipeline exposure\n" + "\ta. Regional Initiative\n \tb. Planning and Approval\n \tc. UAT Verification\n \td. Operational Pilot ",
   },
   {
     id: 3,
     title: "Phase 3: Operational Pilot & Deployment",
     bg: "#16a34a",
-    desc: "Successful workflows transition into an operational pilot phase—mirroring live, real-world logistics scenarios to ensure seamless stability before full deployment to end-users.",
+    desc: "#1 QA & Product Validation (UAT)\n" + "#2 Stakeholder Management & Communication (Meetings, Alignment with Stakeholders), Debug sessions\n" + "#3 Continuous Improvement & Operational Readiness (Material prep & release announcement&configuration",
   },
 ];
 
@@ -100,7 +100,7 @@ const GALLERY_ITEMS = [
   { img: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=520&h=360&fit=crop&auto=format", alt: "Team lunch celebration after the Zone 7 performance milestone", caption: "Zone 7 Milestone Lunch", date: "Jul 12, 2026", h: 260 },
   { img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=420&h=520&fit=crop&auto=format", alt: "Night shift at the sorting hub during peak season", caption: "Night Shift at the Hub", date: "Jul 25, 2026", h: 310 },
   { img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=520&h=400&fit=crop&auto=format", alt: "Department presentation on SLA improvements to operations manager", caption: "Department Presentation", date: "Aug 1, 2026", h: 240 },
-  { img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=520&h=520&fit=crop&auto=format", alt: "Team photo at end-of-month celebration event", caption: "End-of-Month Celebration", date: "Jul 31, 2026", h: 300 },
+  { img: new URL("./img/image2.jpg", import.meta.url).href, alt: "Aisya's Wedding", caption: "Attending Aisya's Wedding", date: "June 14, 2026", h: 300 },
   { img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=520&h=400&fit=crop&auto=format", alt: "Study group session with fellow interns sharing notes", caption: "Intern Study Group", date: "Jun 18, 2026", h: 250 },
   { img: "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=420&h=380&fit=crop&auto=format", alt: "Rider briefing session on new QR scanning procedures", caption: "Rider Briefing Session", date: "Aug 8, 2026", h: 260 },
 ];
@@ -566,7 +566,7 @@ export default function App() {
                       <h4 className="font-montserrat font-black leading-tight mb-3" style={{ fontSize: "clamp(1.3rem,2vw,1.7rem)" }}>
                         {card.title}
                       </h4>
-                      <p className="text-sm md:text-base leading-relaxed text-white/80 max-w-2.5xl whitespace-pre-line">
+                      <p className="text-sm md:text-base leading-relaxed text-white/80 max-w-2.5xl whitespace-pre-line whitespace-pre-wrap">
                         {card.desc}
                       </p>
                     </div>
