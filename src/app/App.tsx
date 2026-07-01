@@ -41,9 +41,9 @@ const TASK_DATA = [
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
     desc: "Allow multiple ePOD (electronic proof-of-delivery) submissions for a single parcel in the IAC system. Conducted UAT and pilot live testing with Shopee Marketplace team. Successfully rolled out the feature to all users (Shopee and Driver), resulting in better customer experience.",
-    details: ["6 weeks duration", "12% error reduction", "WMS system", "Target: April-May 2026"],
-    img: "https://images.unsplash.com/photo-1530213786676-41ad9f7736f6?w=700&h=460&fit=crop&auto=format",
-    imgAlt: "Workers sorting parcels on a conveyor belt system in a large distribution centre",
+    details: ["Better UX", "Clearer details", "April-May 2026"],
+    img: "./img/task1.png",
+    imgAlt: "Task 1",
     reverse: false,
   },
   {
@@ -52,9 +52,9 @@ const TASK_DATA = [
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
     desc: "Utilizing AMS to track high value assets used in the warehouse and hubs by the ops. Aims for more systematic asset usage tracking with history, and reducing the percentage of lost assets during operation. Currently in pilot live testing phase with help from Asset team (HQ).",
-    details: ["12 zones monitored", "Zone 7 turnaround", "84% → 91% OTD", "Target: April-July 2026"],
-    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=460&fit=crop&auto=format",
-    imgAlt: "Analytics dashboard showing delivery performance metrics and route optimisation data",
+    details: ["Asset Tracking", "Reduce losses", "Pilot Testing", "April & July 2026"],
+    img: "./img/task2.png",
+    imgAlt: "Task 2",
     reverse: true,
   },
   {
@@ -63,9 +63,9 @@ const TASK_DATA = [
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
     desc: "Enhancement feature for Shopee AWB label & Shopee tracking system. The feature will indicates the information of the successful delivery rate during weekend (according to region). Conducted the UAT testing and feature already rollout to all users. ",
-    details: ["140+ cases handled", "2.4 day avg resolution", "3-day SLA target", "Target: April-June 2026"],
-    img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&h=460&fit=crop&auto=format",
-    imgAlt: "Customer service representative handling escalation tickets at a computer workstation",
+    details: ["Clearer details", "Improve Efficiency", " April & July 2026"],
+    img: "./img/task3.png",
+    imgAlt: "Task 3",
     reverse: false,
   },
   {
@@ -74,9 +74,9 @@ const TASK_DATA = [
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
     desc:"Enhancement feature for Shopee ops to validate the onhold reason for the parcel delivery attempt. Implementing the use of AI and automated system for validation with manual review option to validate the parcel onhold reason before allowing to be process. Also featuring the OH List for better visibility and management to the ops team. Already rollout in phase and have been used by the system.",
-    details: ["SOP manual revision", "QR scan workflows", "POD protocols", "Target: May-June 2026"],
-    img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=460&fit=crop&auto=format",
-    imgAlt: "Logistics documentation and workflow planning on a laptop in a warehouse office",
+    details: ["Enhanced Validation", "Reduced losses", "POD protocols", "May-June 2026"],
+    img: "./img/task4.png",
+    imgAlt: "Task 4",
     reverse: true,
   },
 ];
@@ -96,9 +96,9 @@ const PROCESS_CARDS = [
   },
   {
     id: 3,
-    title: "Phase 3: Operational Pilot & Deployment",
+    title: "SKILLS GAINED",
     bg: "#16a34a",
-    desc: "#1 QA & Product Validation (UAT)\n" + "#2 Stakeholder Management & Communication (Meetings, Alignment with Stakeholders), Debug sessions\n" + "#3 Continuous Improvement & Operational Readiness (Material prep & release announcement&configuration",
+    desc: "#1 Product & Management skills\n" + "#2 Stakeholder coordination\n" + "#3 Technical QA",
   },
 ];
 
@@ -511,7 +511,7 @@ export default function App() {
       {/* ── 5. TASKS & PROJECTS ── */}
       <section id="tasks" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="font-mono text-orange-500 text-[10px] tracking-[0.25em] uppercase mb-2">ACTIVE OPERATIONS LOG</p>
+          <p className="font-mono text-orange-500 text-[10px] tracking-[0.25em] uppercase mb-2">MY BACKLOGS</p>
           <h2 className="font-montserrat font-black text-[#0d1b3e] mb-12" style={{ fontSize: "clamp(2rem,4vw,3rem)" }}>
             TASKS &<br />PROJECTS
           </h2>
@@ -521,7 +521,7 @@ export default function App() {
             {[
               { icon: ClipboardList, label: "Total Tasks", val: "7", sub: "Assigned projects", bg: "#0d1b3e", tc: "#ff6b00", sc: "rgba(255,255,255,0.4)" },
               { icon: CheckCircle2, label: "Completed", val: "7", sub: "On track", bg: "#ff6b00", tc: "#ffffff", sc: "rgba(255,255,255,0.6)" },
-              { icon: Award, label: "Live", val: "4", sub: "Rollout to user", bg: "#facc15", tc: "#0d1b3e", sc: "rgba(13,27,62,0.5)" },
+              { icon: Award, label: "Live", val: "5", sub: "Rollout to user", bg: "#facc15", tc: "#0d1b3e", sc: "rgba(13,27,62,0.5)" },
               //{ icon: Award, label: "Commendations", val: "2", sub: "From supervisors", bg: "#f5f5f7", tc: "#0d1b3e", sc: "#999" },
             ].map(({ icon: Icon, label, val, sub, bg, tc, sc }) => (
               <div key={label} className="rounded-2xl p-5" style={{ background: bg }}>
@@ -683,9 +683,9 @@ export default function App() {
                 title: "Key Takeaways",
                 color: "#ff6b00",
                 points: [
-                  "Real logistics is data-driven at every level — from route plans to SLA dashboards",
-                  "Cross-functional communication is the backbone of last-mile delivery success",
-                  "Small process improvements compound quickly at scale",
+                  "A good logistics is data-driven at every level. An excellent and well-maintained system is one of the key for success",
+                  "Cross-functional communication is important for achieving greater achievement",
+                  "Small but continuous enhancements help improve and smooth the process",
                 ],
               },
               {
@@ -693,9 +693,10 @@ export default function App() {
                 title: "Challenges Faced",
                 color: "#facc15",
                 points: [
-                  "Adapting to peak-day pace and volume during June double-date sales events",
-                  "Navigating WMS limitations with manual fallback procedures",
-                  "Building trust and rapport with field riders as an intern",
+                  "Aligning user needs and business needs",
+                  "Technical issues, cross-functional teamwork, and miscommunication ",
+                  "Adapting to the corporate daily routine",
+                  "Navigating the new-to-me system",
                 ],
               },
               {
@@ -703,9 +704,9 @@ export default function App() {
                 title: "Operational Insights",
                 color: "#34d399",
                 points: [
-                  "Zone-level variance is often solved through better route sequencing, not more riders",
-                  "First-attempt delivery rate drives the most cost savings across the network",
-                  "Technology adoption at field level requires deliberate change management",
+                  "Wonderful and insightful journey",
+                  "Helps shape and prepare for the upcoming career",
+                  "Experience in fast-paced workflow",
                 ],
               },
             ].map(({ icon: Icon, title, color, points }) => (
@@ -727,13 +728,12 @@ export default function App() {
           {/* Closing quote */}
           <div className="rounded-2xl p-8 md:p-10 border border-orange-500/20 bg-orange-500/6">
             <p className="text-white/80 text-lg leading-relaxed italic">
-              "This internship confirmed that logistics is not just about moving boxes — it is about
-              orchestrating information, people, and technology in a high-stakes, real-time environment.
-              The three months at SwiftRoute have given me a foundation that no classroom can fully
-              replicate: the ability to think operationally, act under pressure, and measure what matters."
+              "Before, I wasn't aware how and what product management team does, especially coming from technical background, guessing every decision will be decide by software engineers.
+              But this internship experience has opened my eyes, how a product team works, how corporate works and communicate which each other, giving me
+              an insightful exposure to the real behind the scene. It so much more than just deliver a parcel."
             </p>
             <div className="mt-5 font-mono text-orange-400 text-sm">
-              — Ahmad Farhan bin Zulkifli, August 2026
+              — Izzat, July 2026
             </div>
           </div>
         </div>
@@ -782,9 +782,10 @@ export default function App() {
             a student (for now), may God bless all of us, insyaAllah. Peace out.
           </p>
 
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-4 gap-4">
             {[
               { sup: "Presented by", main: "Izzat Mahfuz", sub: "2026" },
+              { sup: "University", main: "UiTM", sub: "Shah Alam" },
               { sup: "Company", main: "SPX Xpress Sdn. Bhd.", sub: "Mid Valley, KL" },
               { sup: "Duration", main: "Mar – July 2026", sub: "14 Week" },
             ].map(({ sup, main, sub }) => (
@@ -805,6 +806,32 @@ export default function App() {
           </p>
         </div>
       </section>
+
+      <footer className="border-t border-white/10 bg-[#0d1b3e] py-8 px-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 max-w-6xl mx-auto">
+          <p className="text-white/50 text-xs font-mono text-center md:text-left">
+            alph4nov © 2026
+          </p>
+          <div className="flex items-center gap-6 text-xs font-montserrat">
+            <a
+              href="https://www.linkedin.com/in/izzat-m-a64083183/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 hover:text-blue-300 transition-colors duration-200"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/alph4nov"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/60 hover:text-purple-300 transition-colors duration-200"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </footer>
 
     </div>
   );
