@@ -12,6 +12,14 @@ import {
   TrendingUp,
   Zap,
   ClipboardList,
+  DollarSign,
+  ShieldCheck,
+  Clock,
+  Box,
+  Smartphone,
+  Network,
+  Terminal,
+  AlertCircle,
 } from "lucide-react";
 
 
@@ -62,7 +70,7 @@ const TASK_DATA = [
   },
   {
     num: "TASK-04",
-    title: "[UAT & LIVE] Proof of Onhold Validation]",
+    title: "[UAT & LIVE] Proof of Onhold Validation",
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
     desc:"Enhancement feature for Shopee ops to validate the onhold reason for the parcel delivery attempt. Implementing the use of AI and automated system for validation with manual review option to validate the parcel onhold reason before allowing to be process. Also featuring the OH List for better visibility and management to the ops team. Already rollout in phase and have been used by the system.",
@@ -95,14 +103,29 @@ const PROCESS_CARDS = [
 ];
 
 const GALLERY_ITEMS = [
-  { img: "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=520&h=420&fit=crop&auto=format", alt: "Team orientation day at SwiftRoute HQ with all new interns", caption: "Orientation Day", date: "Jun 3, 2026", h: 300 },
-  { img: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=520&fit=crop&auto=format", alt: "Handshake during team introduction at the operations hub", caption: "Team Introduction", date: "Jun 4, 2026", h: 240 },
-  { img: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=520&h=360&fit=crop&auto=format", alt: "Team lunch celebration after the Zone 7 performance milestone", caption: "Zone 7 Milestone Lunch", date: "Jul 12, 2026", h: 260 },
-  { img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=420&h=520&fit=crop&auto=format", alt: "Night shift at the sorting hub during peak season", caption: "Night Shift at the Hub", date: "Jul 25, 2026", h: 310 },
-  { img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=520&h=400&fit=crop&auto=format", alt: "Department presentation on SLA improvements to operations manager", caption: "Department Presentation", date: "Aug 1, 2026", h: 240 },
-  { img: new URL("./img/image2.jpg", import.meta.url).href, alt: "Aisya's Wedding", caption: "Attending Aisya's Wedding", date: "June 14, 2026", h: 300 },
-  { img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=520&h=400&fit=crop&auto=format", alt: "Study group session with fellow interns sharing notes", caption: "Intern Study Group", date: "Jun 18, 2026", h: 250 },
-  { img: "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=420&h=380&fit=crop&auto=format", alt: "Rider briefing session on new QR scanning procedures", caption: "Rider Briefing Session", date: "Aug 8, 2026", h: 260 },
+  { img: "./img/onboard1.jpg", alt: "Onboarding Merch", caption: "Onboarding Merch", date: "March 30, 2026", h: 330 },
+  { img: "./img/img5.jpg", alt: "Raya Photoshoot Challenge", caption: "Raya Photoshoot Challenge", date: "April 6, 2026", h: 400 },
+  { img: "./img/img6.jpg", alt: "Product Team Raya Potluck", caption: "Product Team Raya Potluck", date: "April 8, 2026", h: 360 },
+  { img: "./img/foodie.HEIC", alt: "Product Team Raya Potluck", caption: "Potluck Fooodie", date: "April 8, 2026", h: 400 },
+  { img: "./img/img3.jpg", alt: "My Desk", caption: "My Desk", date: "Some day in May 2026", h: 370 },
+  { img: "./img/raya-win.jpg", alt: "Photo Challenge prize", caption: "Photo Challenge prize", date: "April 9, 2026", h: 350 },
+  { img: "./img/img2.jpg", alt: "Aisya's Wedding", caption: "Attending Aisya's Wedding", date: "June 14, 2026", h: 400 },
+  { img: "./img/img9.jpg", alt: "Meeting tri-weekly", caption: "Proof i joined the meeting", date: "some day in May 2026", h: 340 },
+  { img: "./img/img4.jpg", alt: "Team Photo", caption: "Team Photo", date: "April 9, 2026", h: 200 },
+  { img: "./img/img8.jpg", alt: "Team Photo", caption: "Team Photo", date: "April 9, 2026", h: 370 },
+];
+
+const SUB_TEAMS = [
+  { name: "Finance", code: "FIN", icon: DollarSign },
+  { name: "Non-Shopee Seller", code: "NSS", icon: Users },
+  { name: "Linehaul (Land, Air, Sea)", code: "LH", icon: Truck },
+  { name: "Workforce Management", code: "WFM", icon: Clock },
+  { name: "Asset", code: "AMS", icon: Box },
+  { name: "FM, LM, DOP", code: "OPS-DRIVER", icon: MapPin },
+  { name: "BSC / Locker", code: "BSC", icon: Smartphone },
+  { name: "SOC / Network / ASM / WH / SIP / EM", code: "NET", icon: Network },
+  { name: "QA Testers", code: "QA", icon: Terminal },
+  { name: "Exceptional Handling / Channel Integrations / Misc", code: "EHA", icon: AlertCircle },
 ];
 
 export default function App() {
@@ -243,14 +266,14 @@ export default function App() {
             <Package className="w-4 h-4 text-orange-400 shrink-0" />
           </div>
 
-          <h1 className="font-montserrat font-black leading-none mb-3" style={{ fontSize: "clamp(3rem, 9vw, 6rem)" }}>
+          <h1 className="font-montserrat font-black leading-none mb-3" style={{ fontSize: "clamp(3rem, 9vw, 5rem)" }}>
             <span className="text-white block">CST688</span>
-            <span className="text-white block">INTERNSHIP</span>
-            <span style={{ fontSize: "clamp(1rem, 3vw, 2rem)", color: "#ff6b00"}} className="block">Product Intern @SPX Express</span>
+            <span className="text-white block">INDUSTRIAL TRAINING</span>
+            <span style={{ fontSize: "clamp(1rem, 3vw, 2rem)", color: "#ff6b00", fontStyle: "italic" }} className="block">Product Intern @SPX Express</span>
           </h1>
 
           <p className="font-mono text-white/30 text-xs tracking-[0.25em] uppercase mt-4 mb-10">
-            PARCEL NO. INT-2026-0071 &nbsp;·&nbsp; TRACKING ACTIVE
+            PARCEL NO. INT-2026-07-03 &nbsp;·&nbsp; TRACKING ACTIVE
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm">
@@ -331,7 +354,7 @@ export default function App() {
       {/* ── 3. COMPANY BACKGROUND ── */}
       <section id="company" className="py-24 bg-white border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="grid lg:grid-cols-1 gap-16 items-start">
             {/* Text */}
             <div>
               <p className="font-mono text-orange-500 text-[10px] tracking-[0.25em] uppercase mb-2">SENDER INFORMATION</p>
@@ -344,7 +367,7 @@ export default function App() {
                 <img
                   src="./img/sealtd-spx.png"
                   alt="SPX Xpress Sdn Bhd"
-                  className="w-full h-85 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-105 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
@@ -356,7 +379,7 @@ export default function App() {
                 </p>
                 <p>
                   With over 1000 employees and a network spanning to more than 180 distribution hubs, SPX
-                  processes an average of 2.1 million parcels per day. Their proprietary real-time
+                  processes an average of 2.5 million parcels per day. Their proprietary real-time
                   tracking platform, serves and manage the order fulfillment and delivery operations for Shopee, ensuring timely and efficient parcel delivery across the region.
                 </p>
                 <p>
@@ -371,7 +394,7 @@ export default function App() {
 
               <div className="mt-8 grid grid-cols-3 gap-3">
                 {[
-                  { val: "117k", label: "Avg Parcels / Week" },
+                  { val: "2.5M", label: "Parcels / day" },
                   { val: "180+", label: "Hubs" },
                   { val: "1000+", label: "Employees" },
                 ].map((s) => (
@@ -387,9 +410,9 @@ export default function App() {
             <div className="space-y-4">
               <div className="group overflow-hidden rounded-xl bg-gray-200">
                 <img
-                  src="./img/southpoint-tower.jpg"
+                  src="./img/southpoint-tower-1.jpg"
                   alt="SPX Xpress Sdn Bhd"
-                  className="w-full h-90 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-90 object-cover group-hover:scale-105 transition-transform duration-500 object-position-top"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -425,7 +448,7 @@ export default function App() {
           <div className="relative pb-8">
             <div className="overflow-hidden rounded-2xl bg-gray-200">
               <img
-                src="./img/product_team-1.jpg"
+                src="./img/product-team-new.jpg"
                 alt="MY SPX Superheroes"
                 className="w-full object-cover"
                 style={{ height: "clamp(280px, 40vw, 440px)" }}
@@ -448,9 +471,8 @@ export default function App() {
                 </div>
                 <div className="flex flex-col justify-center gap-4">
                   {[
-                    { icon: Users, label: "Team Size", val: "11 Staff" },
+                    { icon: Users, label: "Team Size", val: "11 FTE Staff" },
                     { icon: MapPin, label: "Office", val: "Level 21, Southpoint Tower" },
-                    { icon: Package, label: "Daily Volume", val: "~21,000" },
                   ].map(({ icon: Icon, label, val }) => (
                     <div key={label} className="flex items-center gap-3">
                       <div className="w-9 h-9 rounded-lg bg-orange-500/15 flex items-center justify-center shrink-0">
@@ -464,6 +486,22 @@ export default function App() {
                   ))}
                 </div>
               </div>
+              <div className="mt-8 grid sm:grid-cols-3 gap-4 border-t border-white/10 pt-6">
+                    {SUB_TEAMS.map((team) => {
+                      const Icon = team.icon;
+                      return (
+                        <div key={team.name} className="flex items-center gap-3">
+                          <div className="w-8 h-8 rounded-lg bg-orange-500/15 flex items-center justify-center shrink-0">
+                            <Icon className="w-4 h-4 text-yellow-400" />
+                          </div>
+                          <div>
+                            <div className="font-mono text-white/35 text-[9px] uppercase tracking-wider">{team.code}</div>
+                            <div className="font-montserrat font-bold text-white text-s leading-snug hover:text-yellow-400">{team.name}</div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
             </div>
           </div>
         </div>
@@ -540,7 +578,7 @@ export default function App() {
                     PROCESS FLOW
                   </p>
                   <h3 className="font-montserrat font-black text-[#0d1b3e]" style={{ fontSize: "clamp(1.8rem,3vw,2.4rem)" }}>
-                    DELIVERY<br />STAGES
+                    INSIGHTS<br />
                   </h3>
                 </div>
               </div>
