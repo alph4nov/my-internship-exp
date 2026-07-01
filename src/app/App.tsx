@@ -32,44 +32,65 @@ const TASK_DATA = [
     title: "[UAT & LIVE] IAC Multiple ePOD",
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
-    desc: "Assisted the sorting team in verifying inbound manifests against physical parcel counts. Identified and logged discrepancies in the warehouse management system (WMS), reducing mismatch errors by 12% over six weeks. Developed a daily reconciliation checklist that was later adopted by the full team.",
-    details: ["6 weeks duration", "12% error reduction", "WMS system", "Checklist adopted"],
+    desc: "Allow multiple ePOD (electronic proof-of-delivery) submissions for a single parcel in the IAC system. Conducted UAT and pilot live testing with Shopee Marketplace team. Successfully rolled out the feature to all users (Shopee and Driver), resulting in better customer experience.",
+    details: ["6 weeks duration", "12% error reduction", "WMS system", "Target: April-May 2026"],
     img: "https://images.unsplash.com/photo-1530213786676-41ad9f7736f6?w=700&h=460&fit=crop&auto=format",
     imgAlt: "Workers sorting parcels on a conveyor belt system in a large distribution centre",
     reverse: false,
   },
   {
     num: "TASK-02",
-    title: "RouteVision Dashboard Reporting",
+    title: "[UAT] High Value Asset Tracking via AMS]",
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
-    desc: "Compiled and presented weekly SLA performance reports for 12 delivery zones using the RouteVision analytics dashboard. Identified Zone 7 (Cheras) as a consistent underperformer and proposed route adjustments that improved on-time delivery from 84% to 91% within three weeks.",
-    details: ["12 zones monitored", "Zone 7 turnaround", "84% → 91% OTD", "Weekly reporting"],
+    desc: "Utilizing AMS to track high value assets used in the warehouse and hubs by the ops. Aims for more systematic asset usage tracking with history, and reducing the percentage of lost assets during operation. Currently in pilot live testing phase with help from Asset team (HQ).",
+    details: ["12 zones monitored", "Zone 7 turnaround", "84% → 91% OTD", "Target: April-July 2026"],
     img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=460&fit=crop&auto=format",
     imgAlt: "Analytics dashboard showing delivery performance metrics and route optimisation data",
     reverse: true,
   },
   {
     num: "TASK-03",
-    title: "Customer Service Escalation Support",
+    title: "[UAT & LIVE] Weekend Label Phase 2",
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
-    desc: "Handled Tier-1 escalation cases involving lost, delayed, or damaged parcels. Processed 140+ cases over five weeks, coordinating between field riders, the warehouse team, and the customer experience team. Maintained an average resolution time of 2.4 business days against a 3-day SLA target.",
-    details: ["140+ cases handled", "2.4 day avg resolution", "3-day SLA target", "Cross-team coordination"],
+    desc: "Enhancement feature for Shopee AWB label & Shopee tracking system. The feature will indicates the information of the successful delivery rate during weekend (according to region). Conducted the UAT testing and feature already rollout to all users. ",
+    details: ["140+ cases handled", "2.4 day avg resolution", "3-day SLA target", "Target: April-June 2026"],
     img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&h=460&fit=crop&auto=format",
     imgAlt: "Customer service representative handling escalation tickets at a computer workstation",
     reverse: false,
   },
   {
     num: "TASK-04",
-    title: "Rider Onboarding & SOP Documentation",
+    title: "[UAT & LIVE] Proof of Onhold Validation]",
     status: "COMPLETED",
     statusCls: "bg-emerald-100 text-emerald-700",
-    desc: "Currently revising the Last-Mile Rider Standard Operating Procedure manual in collaboration with the HR & Training Coordinator. The updated guide incorporates QR-based parcel scanning workflows and new proof-of-delivery protocols. Target completion: end of internship.",
-    details: ["SOP manual revision", "QR scan workflows", "POD protocols", "Target: Aug 2026"],
+    desc:"Enhancement feature for Shopee ops to validate the onhold reason for the parcel delivery attempt. Implementing the use of AI and automated system for validation with manual review option to validate the parcel onhold reason before allowing to be process. Also featuring the OH List for better visibility and management to the ops team. Already rollout in phase and have been used by the system.",
+    details: ["SOP manual revision", "QR scan workflows", "POD protocols", "Target: May-June 2026"],
     img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=460&fit=crop&auto=format",
     imgAlt: "Logistics documentation and workflow planning on a laptop in a warehouse office",
     reverse: true,
+  },
+];
+
+const PROCESS_CARDS = [
+  {
+    id: 1,
+    title: "Action Conducted",
+    bg: "#e11d48",
+    desc: "#1 QA & Product Validation (UAT)\n" + "#2 Stakeholder Management & Communication (Meetings, Alignment with Stakeholders), Debug sessions\n" + "#3 Continuous Improvement & Operational Readiness (Material prep & release announcement&configuration",
+  },
+  {
+    id: 2,
+    title: "Phase 2: Technical Development & UAT Verification",
+    bg: "#2563eb",
+    desc: "Once engineering completes development, systematic User Acceptance Testing (UAT) is executed to validate that all technical builds strictly align with underlying business requirements.",
+  },
+  {
+    id: 3,
+    title: "Phase 3: Operational Pilot & Deployment",
+    bg: "#16a34a",
+    desc: "Successful workflows transition into an operational pilot phase—mirroring live, real-world logistics scenarios to ensure seamless stability before full deployment to end-users.",
   },
 ];
 
@@ -265,8 +286,8 @@ export default function App() {
 
           <div className="relative">
             {[
-              { num: "01", label: "Company Background", desc: "History, mission, and overview of SwiftRoute Logistics", id: "company", stop: "ORIGIN" },
-              { num: "02", label: "Department Background", desc: "Operations & Last-Mile Delivery team structure", id: "department", stop: "SORTED" },
+              { num: "01", label: "Company Background", desc: "History, mission, and overview of SPX Express", id: "company", stop: "ORIGIN" },
+              { num: "02", label: "Department Background", desc: "Knowing the team behind the operation", id: "department", stop: "SORTED" },
               { num: "03", label: "Tasks & Projects", desc: "Work completed, contributions, and project outcomes", id: "tasks", stop: "IN TRANSIT" },
               { num: "04", label: "Activities & Memories", desc: "Team events, photos, and memorable moments", id: "memories", stop: "OUT FOR DELIVERY" },
               { num: "05", label: "Conclusion", desc: "Key takeaways, challenges, and operational insights", id: "conclusion", stop: "ARRIVED" },
@@ -319,6 +340,14 @@ export default function App() {
               </h2>
               <div className="w-12 h-1 bg-orange-500 mb-8" />
 
+              <div className="group overflow-hidden rounded-xl bg-gray-200">
+                <img
+                  src="./img/sealtd-spx.png"
+                  alt="SPX Xpress Sdn Bhd"
+                  className="w-full h-85 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
               <div className="space-y-4 text-gray-600 leading-relaxed text-[15px]">
                 <p>
                   <strong className="text-[#0d1b3e]">SPX Express</strong> a logistic and courier company, operates under 
@@ -328,13 +357,15 @@ export default function App() {
                 <p>
                   With over 1000 employees and a network spanning to more than 180 distribution hubs, SPX
                   processes an average of 2.1 million parcels per day. Their proprietary real-time
-                  tracking platform, <em>RouteVision</em>, serves enterprise clients and individual
-                  consumers with full end-to-end visibility.
+                  tracking platform, serves and manage the order fulfillment and delivery operations for Shopee, ensuring timely and efficient parcel delivery across the region.
                 </p>
                 <p>
                   The company mission: <strong className="text-orange-600">"Fast & Reliable."</strong> — a
                   commitment to speed, extensive coverage and reliable solutions while being cost-effective to customers,
                   have place them to be one of the leading logistics partners in Southeast Asia, Brazil and Taiwan.
+                </p>
+                <p>
+                  The MY SPX HQ located at: <strong className="text-orange-600">Level 25, Menara Southpoint, Mid Valley City, Kuala Lumpur</strong>
                 </p>
               </div>
 
@@ -356,22 +387,22 @@ export default function App() {
             <div className="space-y-4">
               <div className="group overflow-hidden rounded-xl bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=840&h=460&fit=crop&auto=format"
-                  alt="SwiftRoute warehouse interior with automated sorting conveyor belts"
-                  className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500"
+                  src="./img/southpoint-tower.jpg"
+                  alt="SPX Xpress Sdn Bhd"
+                  className="w-full h-90 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="group overflow-hidden rounded-xl bg-gray-200">
                   <img
-                    src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=420&h=420&fit=crop&auto=format"
+                    src="./img/shopee-logo.png"
                     alt="SwiftRoute delivery fleet lined up at the Petaling Jaya depot"
                     className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="group overflow-hidden rounded-xl bg-gray-200">
                   <img
-                    src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=420&h=420&fit=crop&auto=format"
+                    src="./img/spx-logo.jpeg"
                     alt="Staff processing packages at the parcel sorting facility"
                     className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -499,7 +530,53 @@ export default function App() {
               </div>
             </div>
           ))}
+
+          {/* Sticky stacking process cards */}
+          <div className="mt-8">
+            <div className="rounded-[2rem] bg-[#f5f5f7] px-4 py-5 md:px-8 md:py-8">
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <p className="font-mono text-orange-500 text-[10px] tracking-[0.25em] uppercase mb-2">
+                    PROCESS FLOW
+                  </p>
+                  <h3 className="font-montserrat font-black text-[#0d1b3e]" style={{ fontSize: "clamp(1.8rem,3vw,2.4rem)" }}>
+                    DELIVERY<br />STAGES
+                  </h3>
+                </div>
+              </div>
+
+              <div>
+                {PROCESS_CARDS.map((card) => (
+                  <div
+                    key={card.id}
+                    className="sticky top-24 z-10"
+                  >
+                    <div
+                      className="rounded-[2rem] min-h-[300px] px-8 py-8 md:px-10 md:py-10 text-white shadow-[0_20px_70px_-35px_rgba(13,27,62,0.8)] flex flex-col justify-center"
+                      style={{ background: card.bg }}
+                    >
+                      <div className="flex items-center gap-3 mb-4">
+                        <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/20 font-mono text-sm font-bold">
+                          {card.id}
+                        </span>
+                        <span className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/70">
+                          ASSIGNMENT TASKS
+                        </span>
+                      </div>
+                      <h4 className="font-montserrat font-black leading-tight mb-3" style={{ fontSize: "clamp(1.3rem,2vw,1.7rem)" }}>
+                        {card.title}
+                      </h4>
+                      <p className="text-sm md:text-base leading-relaxed text-white/80 max-w-2.5xl whitespace-pre-line">
+                        {card.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
+
       </section>
 
 
